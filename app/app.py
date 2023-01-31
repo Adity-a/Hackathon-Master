@@ -115,7 +115,7 @@ def predict_image(img, model=disease_model):
     yb = model(img_u)
     # Pick index with highest probability
     _, preds = torch.max(yb, dim=1)
-    prediction = disease_classes[preds[0].item()]
+    prediction = disease_classes[preds[0].item()] 
     # Retrieve the class label
     return prediction
 
