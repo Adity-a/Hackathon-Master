@@ -92,7 +92,7 @@ def weather_fetch(city_name):
     response = requests.get(complete_url)
     x = response.json()
     
-    temperature = x["current"]["temperature"] 
+    temperature = x["current"]["temperature"]
     humidity = x["current"]["humidity"]
     return temperature, humidity
 
